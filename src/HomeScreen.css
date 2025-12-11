@@ -1,0 +1,33 @@
+.HomeScreen.hero-bg {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-image: var(--hero-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+}
+.Ribbon {
+  position: absolute; top: 20px; left: 20px;
+  background: #ff3d71; color: #fff; font-weight: 800;
+  padding: 8px 14px; border-radius: 8px; letter-spacing: .3px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+.HeroContent {
+  text-align: center; padding: clamp(16px, 3vw, 24px);
+  border-radius: 18px; background: rgba(255,255,255,0.72);
+  backdrop-filter: blur(6px); box-shadow: 0 10px 26px rgba(0,0,0,.15);
+  max-width: min(720px, 90vw);
+}
+.HeroTitle   { margin:0 0 6px; font-size: clamp(32px, 6vw, 56px); font-weight: 800; color:#1f2a37; }
+.HeroSubtitle{ margin:0 0 18px; font-size: clamp(14px, 2.6vw, 18px); opacity:.85; }
+.PlayButton {
+  font-size: clamp(18px, 3.2vw, 20px); font-weight: 800;
+  padding: 14px 36px; border: none; border-radius: 12px;
+  background: #4aa3ff; color: #fff; cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+}
+.PlayButton:hover  { background: #2f93ff; }
+.PlayButton:active { transform: translateY(1px); }

@@ -1,0 +1,152 @@
+/* src/CustomizeCharacterScreen.css */
+
+.customize-character-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.character-area {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.character-preview {
+  position: relative;
+  width: 200px;
+  height: 280px;
+}
+
+.character-preview img.character-base {
+  width: 100%;
+  height: auto;
+}
+
+.equipped-item {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  pointer-events: none;
+}
+
+/* Slot-specific positioning (adjust these per item later) */
+.equipped-hat {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.equipped-cape {
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.equipped-wings {
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.equipped-staff {
+  bottom: 0;
+  right: 0;
+}
+.equipped-crown {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.equipped-dress {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.equipped-shield {
+  bottom: 40px;
+  left: 0;
+}
+.equipped-accessory {
+  bottom: 10px;
+  right: 10px;
+}
+
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 70px);
+  gap: 10px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.inventory-slot {
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.inventory-slot:hover {
+  border-color: #4cafef;
+}
+
+.inventory-item {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.empty-inventory {
+  grid-column: span 3;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+
+.equipped-controls {
+  margin-top: 20px;
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+}
+
+.equipped-slot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.equipped-slot button {
+  background: #ff5c5c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.equipped-slot button:hover {
+  background: #e64c4c;
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px 16px;
+  border: none;
+  background: #4cafef;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background: #3a9edc;
+}

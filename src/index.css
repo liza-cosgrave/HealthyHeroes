@@ -1,0 +1,33 @@
+/* Global resets & tokens */
+:root {
+  --c-bg: #f5f7fb;
+  --c-card: #ffffff;
+  --c-muted: #e8ebef;
+  --c-surface: #f3f5f7;
+  --c-success: #6cd17d;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  background: var(--c-bg);
+  color: #1e2630;
+}
+
+/* Links default */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  font: inherit;
+}

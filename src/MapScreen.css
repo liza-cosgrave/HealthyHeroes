@@ -1,0 +1,43 @@
+.MapScreen {
+  position: relative;
+}
+.TopBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+}
+.ScreenTitle {
+  margin: 0;
+  font-size: 18px;
+}
+
+.MapContainer {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.MapImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* This keeps the buttons on top of the image */
+.Overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none; /* allow only buttons to take events */
+}
+.Checkpoint {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ffcc00;
+  border: 2px solid #333;
+  font-weight: 700;
+  cursor: pointer;
+  pointer-events: auto; /* re-enable on buttons */
+}

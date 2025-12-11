@@ -1,0 +1,10 @@
+/* PhotoScreen.css */
+.photo-screen {
+  text-align: center;
+  padding: 2rem;
+  font-family: "Comic Sans MS", cursive;
+}
+
+.photo-screen button {
+  margin-top: 1rem;
+}
